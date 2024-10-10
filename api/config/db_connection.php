@@ -17,7 +17,7 @@ dbname=$dbname
 user=$username 
 password=$password";
 
-// crear la conexion
+// crear la conexion, el conn tiene las credentials y hace la conexion
 $conn = pg_connect($data_connection);
 
 // verificar la conexion

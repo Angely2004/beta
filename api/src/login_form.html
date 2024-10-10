@@ -3,10 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
+    <title>login Form</title>
 </head>
 <body>
-    <h1><font size ="50" color=d85ab4><p align="center">LOGIN FORM</p></font></h1>
-    <a href="http://127.0.0.1/beta/" target="_blank"><p align="center">Go to home</p></a>
+    <table align="center">
+        <tr>
+            <td><h1><font size ="50" color=#F1C232><p align="center">Bienvenido</p></font></h1></td>
+            <td><center><img src="images/logo1.png" width="150" ></center></td> 
+        </tr>
+    </table>
+    <form name="login_form" action="backend/signin.php" method="POST"></form>
+
+        <table align="center">
+                <tr><td><label>Email: </label></td></tr>
+                <tr><td><input type="email" name="email" placeholder="Ingresar correo" required></td></tr>
+                <tr><td>Contraseña: </td></tr>
+                <tr><td><input type="password" name="passwd" placeholder="Ingresar contraseña" required></td></tr>
+
+                <tr><td><p align="center"><button>Register</button></p></td></tr>
+                
+        </table>
+    </form>
+    <style>
+        td {
+          padding: 8px; /* Ajusta el valor según lo necesites */
+        }
+      </style>
+    <table align="center">
+        <tr>
+            <td><a href="http://127.0.0.1/beta/api/src/forgot_pass_form.html" target="_blank"><p align="center">Forgot pass</p></a></td>
+            <td></td>
+            <td><a href="http://127.0.0.1/beta/api/src/register_form.html" target="_blank"><p align="center">sign up</p></a></td>
+        </tr>
+    </table>
 </body>
 </html>
